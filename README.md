@@ -10,3 +10,4 @@ fs,
 Discord.js,
 node-cron,
 dotenv
+I have the .env hidin however that is where you should store your tokens. and utilized (process.env.YOUR_TOKEN)

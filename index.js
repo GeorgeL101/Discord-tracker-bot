@@ -48,12 +48,12 @@ client.on('interactionCreate', async (interaction) => {
 
   // Handle the '/savekd' command (NEW)
   if (commandName === 'savekd') {
-    await saveKD.execute(interaction); // Call the saveKD function
+    await saveKD(interaction); // Call the saveKD function
   }
 
   // Handle the '/getkd' command (NEW)
   if (commandName === 'getkd') {
-    await getKD.execute(interaction); // Call the getKD function
+    await getKD(interaction); // Call the getKD function
   }
 
   // Handle the '/topkd' command (NEW)

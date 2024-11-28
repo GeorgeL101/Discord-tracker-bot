@@ -9,6 +9,7 @@ const getKD = require('./commands/getKD'); // Import getKD command
 const topKD = require('./commands/topKD'); // Import topKD command
 const rank= require('./commands/rank') //import rank command
 const cron = require('node-cron'); // Import node-cron to schedule tasks
+const meta = require('./commands/meta');
 
 
 // Initialize the Discord bot client
@@ -64,6 +65,10 @@ client.on('interactionCreate', async (interaction) => {
   // Handle the /rank command
   if (commandName === 'rank') {
     await rank.execute(interaction); // Call the execute function from the rank.js handler
+  }
+  
+  if (commandName == 'meta'){
+    await meta.execute(interaction)
   }
 
 });

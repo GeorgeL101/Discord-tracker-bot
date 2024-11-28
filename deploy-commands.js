@@ -69,6 +69,10 @@ const commands = [
     option.setName('user')
       .setDescription('The user to check the rank for')
       .setRequired(false)), // Defaults to invoking user if not specified
+
+  new SlashCommandBuilder()
+  .setName("meta")
+  .setDescription("Meta for guns ")
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
